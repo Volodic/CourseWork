@@ -1,10 +1,10 @@
 # Eco-Trip Calculator
 
-###Description
+### Description
 
 Simple Android application to calculate the environmental impact of a trip with implemented CO2 emission calculation engine based on distance and transport mode.
 
-###Architecture
+### Architecture
 
 The application is built on the basis of the **MVVM (Model-View-ViewModel)** architectural pattern:
 
@@ -14,7 +14,7 @@ The application is built on the basis of the **MVVM (Model-View-ViewModel)** arc
 
 MVVM was chosen for this project because this architecture allows for a clear separation of the UI and application logic, which simplifies testing and maintenance of the code. Using Jetpack Compose allows you to write the UI declaratively, which makes it more flexible and easy to maintain.
 
-###Third-party libraries
+### Third-party libraries
 
 1. **Jetpack Compose** - to create a declarative-style user interface.
 2. **Compose Navigation** - to control navigation between screens.
@@ -23,7 +23,7 @@ MVVM was chosen for this project because this architecture allows for a clear se
 5. **Room** - to store and manage data in a local database.
 6. **KSP (Kotlin Symbol Processing)** - used as a replacement for `kapt` for processing annotations, which works faster and more optimally with Kotlin.
 
-###Why these libraries were chosen
+### Why these libraries were chosen
 
 - **Jetpack Compose** provides flexibility in user interface development through a declarative approach.
 - **Compose Navigation** allows you to easily manage navigation within Jetpack Compose.
@@ -31,12 +31,12 @@ MVVM was chosen for this project because this architecture allows for a clear se
 - **Room** is an effective solution for working with SQLite database in Android.
 - **KSP** significantly speeds up annotation processing, which improves performance and reduces compilation time.
 
-###Assumptions
+### Assumptions
 
 - All calculations are performed in kilograms per kilometer for a more optimized output.
 - The type of transport is determined using the enum class TransportType.
 
-###Assembly instructions
+### Assembly instructions
 
 1. Clone repository:
 ```bash
